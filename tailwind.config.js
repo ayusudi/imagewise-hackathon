@@ -20,8 +20,8 @@ module.exports = {
         gracard: 'linear-gradient(45deg, #342782 0%, #1E4898 70.52%, #3B5CB2 100%)',
         gcardfeature: 'linear-gradient(44deg, #251873 0%, #254C99 100%)',
         gradfeatureblue: 'url("https://imagewise-tidb-2023.vercel.app/bluegrad.png")',
-        "bluee": "#1A2360"
-
+        "bluee": "#1A2360",
+        gnav: 'linear-gradient(180deg, #251873 0%, #152e6190 85%)'
       },
       backgroundSize: {
         "shrink": "100% 100%"

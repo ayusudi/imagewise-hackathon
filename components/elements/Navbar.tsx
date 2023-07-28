@@ -6,6 +6,21 @@ const Navbar = () => {
   const { data: session } = useSession()
   const [hide, setHide] = useState(true)
   const [openClick, setOpenClick] = useState(false)
+
+  const [scrollPosition, setScrollPosition] = useState(0)
+
+  useEffect(() => {
+    const updatePosition = () => {
+      setScrollPosition(window.pageYOffset)
+    }
+
+    window.addEventListener('scroll', updatePosition)
+
+    updatePosition()
+
+    return () => window.removeEventListener('scroll', updatePosition)
+  }, [])
+
   useEffect(() => {
     if (openClick) {
       setHide(false)
@@ -14,7 +29,9 @@ const Navbar = () => {
     }
   }, [openClick])
   return (
-    <nav className="fixed w-full z-20 top-0 left-0 text-white">
+    <nav className={
+      scrollPosition > 60 ? "fixed w-full z-20 top-0 left-0 text-white bg-gnav" : "fixed w-full z-20 top-0 left-0 text-white"
+    } >
       <div className="flex  flex-wrap items-center  p-6 lg:px-16  justify-stretch">
         <Link href="/" passHref className="flex items-center flex-1">
           {/* eslint-disable jsx-a11y/alt-text */}
