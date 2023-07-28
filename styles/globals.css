@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: Arial, Helvetica, sans-serif;
+  background: black
+}
+
+.dashbox {
+  background-image: repeating-linear-gradient(0deg, #f7f7f7, #f7f7f7 15px, transparent 15px, transparent 26px, #f7f7f7 26px), repeating-linear-gradient(90deg, #f7f7f7, #f7f7f7 15px, transparent 15px, transparent 26px, #f7f7f7 26px), repeating-linear-gradient(180deg, #f7f7f7, #f7f7f7 15px, transparent 15px, transparent 26px, #f7f7f7 26px), repeating-linear-gradient(270deg, #f7f7f7, #f7f7f7 15px, transparent 15px, transparent 26px, #f7f7f7 26px);
+  background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+}
