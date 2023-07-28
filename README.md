@@ -1,6 +1,9 @@
 ![logo](./docs/asset/logo.png)
 
 # ImageWise
+
+[Click here to try ImageWise](https://imagewise-tidb-2023.vercel.app/)
+
 ImageWise is website that provide AI image feature from Third Party API.
 
 TiDB Hackthon 2023 by Ayu Sudi Dwijayanti (Solo)
@@ -20,14 +23,54 @@ TiDB Hackthon 2023 by Ayu Sudi Dwijayanti (Solo)
 - MySQL
 - Tailwind CSS
 
+## DB Setup in Chat2Query TiDB 
+```sql 
+CREATE TABLE imagewise.users (
+  email VARCHAR(100) NOT NULL UNIQUE,
+  name VARCHAR(256) NOT NULL,
+  profile_img VARCHAR(512) NOT NULL,
+  hint INT DEFAULT 0,
+  credit INT DEFAULT 0
+);
+
+CREATE TABLE imagewise.images (
+  id  VARCHAR(100) UNIQUE,
+  image VARCHAR(526) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  title VARCHAR(100) NOT NULL,
+  feature VARCHAR(50) NOT NULL,
+  created DATE
+);
+
+-- Try login gmail than after get 0 credits run UPDATE Query 
+
+UPDATE imagewise.users 
+  SET credit = 3
+  WHERE email = "<EMAIL GMAIL>";
+
+
+--- To read data 
+SELECT * FROM imagewise.users;
+
+-- To reset database 
+DROP TABLE imagewise.images;
+DROP TABLE imagewise.users;
+```
+
 
 ## Getting Started
+**Zero Step** to remove the red code due to no node_modules. 
+- Open terminal 
+- run `npm install`
+- folder `node_modules` must be created.
 
 **First Step**, make sure you had account at :
-- TiDB and have a Cluster
+- TiDB 
 - Google Cloud Platform 
 - DeepAI
 - Cloudinary
+
+In TiDB please create a Cluster and database and try to run the setup query.
 
 **Second Step**, create setup .env with create with this template :
 
@@ -52,7 +95,6 @@ Note create `.env` file in same level of file `README.md`
 **Third or The Last Step**, Open terminal and run this command line
 
 ```bash
-npm install
 npm run dev
 ```
 
