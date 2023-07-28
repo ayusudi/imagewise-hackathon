@@ -1,8 +1,7 @@
 "use client";
 import "styles/globals.css";
 import { SessionProvider } from "next-auth/react";
-import Head from 'next/head';
-import { ReactNode, useEffect } from "react";
+import { ReactNode } from "react";
 import Navbar from "@elements/Navbar"
 import { Anonymous_Pro } from 'next/font/google'
 
@@ -17,22 +16,14 @@ interface Props {
   session: any
 }
 export default function RootLayout({ children, session }: Props) {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = '/js/script.js';
-    script.async = true;
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" type="image/x-icon" href="/logo.ico" />
+      <header>
+        <link rel="shortcut icon" href="https://imagewise-tidb-2023.vercel.app/logo.ico" sizes="any" />
         <title>ImageWise</title>
-      </Head>
+        {/*  eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script src="/js/script.js" type="module"></script>
+      </header>
       <body className={pro.variable}>
 
         <SessionProvider session={session}>
