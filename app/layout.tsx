@@ -22,6 +22,8 @@ export default function RootLayout({ children, session }: Props) {
         <link rel="shortcut icon" href="https://imagewise-tidb-2023.vercel.app/logo.ico" sizes="any" />
         <title>ImageWise</title>
         {/*  eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FHFT7CLFCD"></script>
+        {/*  eslint-disable-next-line @next/next/no-sync-scripts */}
         <script src="/js/script.js" type="module"></script>
       </header>
       <body className={pro.variable}>
