@@ -1,3 +1,66 @@
+![logo](./docs/asset/logo.png)
+
+# ImageWise
+ImageWise is website that provide AI image feature from Third Party API.
+
+TiDB Hackthon 2023 by Ayu Sudi Dwijayanti (Solo)
+
+![hackthon](./docs/asset/hackthon.png)
+
+## MockUp User Interface
+![ui](./docs/asset/UIUX.png)
+![designsystem](./docs/asset/designsystem.png)
+
+
+## Implementation SSR
+- TypeScript 
+- Next
+- NextAuth
+- React
+- MySQL
+- Tailwind CSS
+
+
+## Getting Started
+
+**First Step**, make sure you had account at :
+- TiDB and have a Cluster
+- Google Cloud Platform 
+- DeepAI
+- Cloudinary
+
+**Second Step**, create setup .env with create with this template :
+
+```env
+GOOGLE_SECRET=
+GOOGLE_ID=
+DB_HOST=
+DB_USER=
+DB_PORT=
+DB_PASSWORD=
+DB_NAME=
+DB_SSLVERSION=
+DEEPAI_KEY=
+CLOUDINARY_URL=
+CLOUDINARY_CLOUDNAME=
+CLOUDINARY_APIKEY=
+CLOUDINARY_APISECRET=
+```
+Note create `.env` file in same level of file `README.md`
+
+
+**Third or The Last Step**, Open terminal and run this command line
+
+```bash
+npm install
+npm run dev
+```
+
+Then open localhost:3000 or other port that shown in terminal. 
+
+
+#### README FROM VERCEL
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

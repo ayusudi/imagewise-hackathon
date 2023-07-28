@@ -79,7 +79,7 @@ const page = ({ feature, push, status }: { feature: string, push: Function, stat
       <p className="text-center">{text}</p>
       <div className="flex flex-col gap-2 w-full items-center">
         <div className="w-3/4 bg-gray-200 p-1 flex items-between">
-          <input type="file" accept="image/*" name="file" id="imageInput" className="flex-1 text-black" />
+          <input type="file" accept="image/*" name="file" id="file" className="flex-1 text-black" />
         </div>
         <p className="text-bolder text-pro">Or</p>
         <input name="image" placeholder="Copy-paste url image here.." type="text" onChange={(e) => setStrImg(e.target.value)} className="w-3/4 py-1 pl-2 text-black bg-white rounded" />

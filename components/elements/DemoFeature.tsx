@@ -13,7 +13,7 @@ const DemoFeature = () => {
   return (
     <section className="lg:pt-0 pt-20 lg:mt-0 bg-grapink flex flex-col lg:h-res h-min-screen justify-between ">
       <div className="lg:gap-0 gap-7 flex-1 flex-wrap px-0 lg:px-16  flex flex-col lg:flex-row items-center justify-between">
-        <iframe id="demo" className="lg:w-auto w-5/6 flex-1 text-white flex aspect-video" src="https://www.youtube.com/embed/WaJYnZ3hHaE?modestbranding=1&showinfo=0" title="YouTube video player" ></iframe>
+        <iframe id="demo" className="lg:w-auto w-5/6 flex-1 text-white flex aspect-video" src="https://www.youtube.com/embed/bL3UFsd9Eco" title="YouTube video player" ></iframe>
         <div className="flex-1 lg:flex-0  grow flex flex-col lg:items-end items-center">
           <div id="features" className="lg:my-0 lg:w-10/12 w-screen lg:gap-7 gap-5 flex flex-wrap flex-col justify-center items-center">
             {/* eslint-disable jsx-a11y/alt-text */}
