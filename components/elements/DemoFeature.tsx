@@ -16,6 +16,8 @@ const DemoFeature = () => {
         <iframe id="demo" className="lg:w-auto w-5/6 flex-1 text-white flex aspect-video" src="https://www.youtube.com/embed/WaJYnZ3hHaE?modestbranding=1&showinfo=0" title="YouTube video player" ></iframe>
         <div className="flex-1 lg:flex-0  grow flex flex-col lg:items-end items-center">
           <div id="features" className="lg:my-0 lg:w-10/12 w-screen lg:gap-7 gap-5 flex flex-wrap flex-col justify-center items-center">
+            {/* eslint-disable jsx-a11y/alt-text */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="textFeature.png" className="lg:h-auto h-7 object-cover" alt="IMAGEWISE" />
             <div className="flex-wrap sm:justify-center lg:w-auto w-4/6  flex-col md:flex-row flex lg:gap-7 gap-5">
               {

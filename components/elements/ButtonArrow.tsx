@@ -7,6 +7,8 @@ const ButtonArrow: React.FC<ButtonArrowProps> = ({ disable }) => {
     return (
       <button className="flex text-gray-100 font-bold bg-white text-sm rounded-3xl p-1 font-pro w-36 justify-center items-center gap-1">
         <p>Try It Now!</p>
+        {/* eslint-disable jsx-a11y/alt-text */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="icons/arrow.png" className="object-contain aspect-square h-10 w-auto" alt="" />
       </button>
     )
@@ -14,6 +16,8 @@ const ButtonArrow: React.FC<ButtonArrowProps> = ({ disable }) => {
     return (
       <button className="flex text-blue-navy font-bold bg-white text-sm rounded-3xl p-1 font-pro w-36 justify-center items-center gap-1">
         <p>Try It Now!</p>
+        {/* eslint-disable jsx-a11y/alt-text */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="icons/arrow.png" className="object-contain aspect-square h-10 w-auto" alt="" />
       </button>
     )

@@ -75,7 +75,7 @@ const Page = () => {
             {
               data.map((el, i) => {
                 return (
-                  <tr className={i == data.length - 1 ? "bg-white" : "bg-white border-b"}>
+                  <tr key={i} className={i == data.length - 1 ? "bg-white" : "bg-white border-b"}>
                     <th scope="row"
                       className={i == data.length - 1 ? "rounded-bl-lg px-6 py-4 font-medium text-gray-900 whitespace-nowrap" : "px-6 py-4 font-medium text-gray-900 whitespace-nowrap"}
                     >
@@ -87,6 +87,8 @@ const Page = () => {
                     {
                       el.actions ?
                         <td className="px-6 py-3">
+                          {/* eslint-disable jsx-a11y/alt-text */}
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img src={el.image} style={{ width: 20, height: 20, objectFit: "contain" }} />
                         </td> :
                         <td></td>
@@ -96,7 +98,7 @@ const Page = () => {
                         <td
                           className={i == data.length - 1 ? "rounded-br-lg px-6 py-3 text-center " : "px-6 py-3 text-center "}
                         >
-                          <a href={el.image} target="_blank" className="font-medium text-blue-600  hover:underline">Open</a>
+                          <a href={el.image} rel="noopener" className="font-medium text-blue-600  hover:underline">Open</a>
                         </td> :
                         <td
                           className={i == data.length - 1 ? "rounded-br-lg px-6 py-3 text-center " : "px-6 py-3 text-center "}

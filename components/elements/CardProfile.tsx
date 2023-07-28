@@ -27,6 +27,8 @@ const CardProfile = () => {
 
   return (
     <div className="mt-16 lg:mt-0 w-64 md:h-52 md:w-5/6 relative bg-gradientapp flex justify-content-center flex-col lg:w-96 sm:h-60 lg:h-60 bg-shrink bg-no-repeat text-white text-sm rounded-2xl rounded-x p-5">
+      {/* eslint-disable jsx-a11y/alt-text */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         style={{
           top: "-100px",

@@ -1,7 +1,8 @@
 "use client";
 import "styles/globals.css";
 import { SessionProvider } from "next-auth/react";
-import { ReactNode } from "react";
+import Head from 'next/head';
+import { ReactNode, useEffect } from "react";
 import Navbar from "@elements/Navbar"
 import { Anonymous_Pro } from 'next/font/google'
 
@@ -16,13 +17,22 @@ interface Props {
   session: any
 }
 export default function RootLayout({ children, session }: Props) {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = '/js/script.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
   return (
     <html lang="en">
-      <head>
+      <Head>
         <link rel="icon" type="image/x-icon" href="/logo.ico" />
         <title>ImageWise</title>
-        <script src="/js/script.js" type="module"></script>
-      </head>
+      </Head>
       <body className={pro.variable}>
 
         <SessionProvider session={session}>

@@ -8,6 +8,8 @@ const Navbar = () => {
     <nav className="fixed w-full z-20 top-0 left-0 text-white">
       <div className="flex  flex-wrap items-center  p-6 lg:px-16  justify-stretch">
         <Link href="/" passHref className="flex items-center flex-1">
+          {/* eslint-disable jsx-a11y/alt-text */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/logo.png" className="h-12 mr-3" alt="IMAGEWISE" />
           <span className="font-pro self-center text-2xl font-semibold whitespace-nowrap dark:text-white">IMAGEWISE</span>
         </Link>

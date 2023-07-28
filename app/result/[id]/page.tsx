@@ -1,5 +1,4 @@
 "use client"
-
 import CardNavigate from "@elements/CardNavigate";
 import Footer from "@elements/Footer";
 import React, { useEffect, useState } from "react";
@@ -30,7 +29,7 @@ const Page: React.FC<PageProps> = ({ params: { id } }) => {
 
       })
 
-  }, [])
+  }, [id])
   return (
     <main className="pt-20 text-white bg-page flex h-min-screen md:h-screen w-screen flex-col">
       <div className="lg:w-875 w-11/12 max-w-1260 lg:h-400 flex lg:flex-col flex-col-reverse m-auto items-center  md:items-center lg:flex-wrap content-between justify-between gap-4 lg:gap-0 lg:py-0 py-10" >
@@ -38,9 +37,16 @@ const Page: React.FC<PageProps> = ({ params: { id } }) => {
           <div className="dashbox flex rounded-xl  w-full h-full">
             <div className="py-2 flex flex-col justify-around items-center bg-gradfeatureblue bg-shrink bg-no-repeat text-white rounded-xl min-h-400 w-64 md:w-full h-full">
               <h1 className="pt-2 font-pro text-xl md:text-3xl font-bold">Here is your result</h1>
+
               {
+
                 result ?
-                  <img src={result} style={{ height: 240, objectFit: "contain" }} /> :
+                  <>
+                    {/* eslint-disable jsx-a11y/alt-text */}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={result} style={{ height: 240, objectFit: "contain" }} />
+                  </>
+                  :
                   <></>
               }
               <p className="text-center">Thank you for trying our prototype.</p>

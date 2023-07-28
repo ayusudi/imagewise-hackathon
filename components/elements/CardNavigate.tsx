@@ -10,6 +10,8 @@ const CardFeatureNavigate = ({ feature, text, bg, url }: { feature: string | nul
         <h1 className="font-pro text-xl">Your Collection</h1>
         <Link href="/collections" className="flex text-blue-navy font-bold bg-white text-sm rounded-3xl p-0.5 font-pro w-36 justify-center items-center gap-1">
           <p>Check now &nbsp;</p>
+          {/* eslint-disable jsx-a11y/alt-text */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/icons/arrow.png" className="object-contain aspect-square h-10 w-auto" alt="" />
         </Link>
       </div>

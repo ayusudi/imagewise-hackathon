@@ -1,4 +1,5 @@
 "use client"
+/* eslint-disable react-hooks/rules-of-hooks */
 import { useEffect, useRef, useState } from "react";
 import Swall from "@elements/Swall"
 
@@ -71,6 +72,8 @@ const page = ({ feature, push, status }: { feature: string, push: Function, stat
       event.preventDefault();
       postImage();
     }} encType='multipart/form-data' action={"/api/features/" + feature} className="py-2 flex flex-col justify-around items-center bg-gradfeatureblue bg-shrink bg-no-repeat text-white rounded-xl min-h-400 w-64 md:w-full h-full">
+      {/* eslint-disable jsx-a11y/alt-text */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={img} alt={feature} width={45} height={45} style={{ objectFit: "contain" }} />
       <h1 className="font-pro text-xl md:text-3xl font-bold">{title}</h1>
       <p className="text-center">{text}</p>
@@ -83,6 +86,8 @@ const page = ({ feature, push, status }: { feature: string, push: Function, stat
       </div>
       <button type="submit" className="h-9 w-24 bg-white rounded-3xl items-center justify-around flex flex-row">
         <p className="text-pro text-black text-sm">Submit</p>
+        {/* eslint-disable jsx-a11y/alt-text */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={imgButton} alt="" height={30} width={30} style={{ objectFit: "contain" }} />
       </button>
     </form>
@@ -90,3 +95,4 @@ const page = ({ feature, push, status }: { feature: string, push: Function, stat
 }
 
 export default page
+/* eslint-enable react-hooks/rules-of-hooks */

@@ -3,6 +3,8 @@ import React from "react";
 const CardFeature = ({ img, feature, text }: { img: string, feature: string, text: string }) => {
   return (
     <div className="bg-gracard px-0 justify-around lg:p-6 w-56 h-24 lg:w-64 lg:h-28 flex flex-wrap bg-white rounded-lg shadow lg:justify-between items-center">
+      {/* eslint-disable jsx-a11y/alt-text */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={img} className="w-10 aspect-square object-cover" alt="" />
       <div className="text-white w-40">
         <h3 className="font-pro font-bold text-sm">{feature}</h3>

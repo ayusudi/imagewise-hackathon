@@ -20,6 +20,8 @@ const Form = () => {
   }, [loading])
   return (
     <>
+      {/* eslint-disable jsx-a11y/alt-text */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={img} alt={feature} width={45} height={45} style={{ objectFit: "contain" }} />
       <h1 className="font-pro text-xl md:text-3xl font-bold">{title}</h1>
       <p className="text-center">{text}</p>
@@ -30,6 +32,8 @@ const Form = () => {
       </div>
       <button onClick={() => setLoading(true)} type="submit" className="h-9 w-24 bg-white rounded-3xl items-center justify-around flex flex-row">
         <p className="text-pro text-black text-sm">Generate</p>
+        {/* eslint-disable jsx-a11y/alt-text */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={imgButton} alt="" height={30} width={30} style={{ objectFit: "contain" }} />
       </button>
       <canvas id="canvas" style={{ display: "none" }}></canvas>
