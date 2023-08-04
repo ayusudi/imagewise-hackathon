@@ -44,7 +44,7 @@ const CardProfile = () => {
         className="rounded-full m-auto aspect-square object-contain flex justify-center" src={session?.user.image || ''} alt="" />
       <div style={{ display: "flex", gap: 8, flexDirection: "column", paddingTop: 95 }}>
         <p className="text-base text-center">{session?.user.name || ''}</p>
-        <div className="flex w-full justify-between">
+        <div className="flex w-full flex-col sm:flex-row md:flex-row text-center justify-between ">
           <p className="text-base">{session?.user.userName || ''}</p>
           <p>{infoUser.hint} / {infoUser.credit} Credits</p>
         </div>

@@ -19,7 +19,7 @@ const DemoFeature = () => {
             {/* eslint-disable jsx-a11y/alt-text */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="textFeature.png" className="lg:h-auto h-7 object-cover" alt="IMAGEWISE" />
-            <div className="flex-wrap sm:justify-center lg:w-auto w-4/6  flex-col md:flex-row flex lg:gap-7 gap-5">
+            <div className="flex-wrap sm:justify-center items-center lg:w-auto w-4/6  flex-col md:flex-row flex lg:gap-7 gap-5">
               {
                 features.map((el, i) => <CardFeature key={i} img={el.img} feature={el.feature} text={el.text} />)
               }

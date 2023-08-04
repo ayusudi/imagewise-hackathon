@@ -30,9 +30,7 @@ export const authOptions: NextAuthOptions = {
     session: async ({ session, token }: { session: any; token: any }) => {
       session.user = token.user;
       session.user.userName = token.user.email
-      if (session.user.image.includes("=s96-c")) {
-        session.user.image = session.user.image.split("=s96-c")[0]
-      }
+      session.user.image = session.user.image.replace("=s96-c", "")
       return session;
     }
   },
