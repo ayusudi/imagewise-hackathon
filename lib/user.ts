@@ -7,11 +7,21 @@ export async function authGoogle({ email, name, profile_img }: { email: string, 
         reject(err)
       } else {
         if (!result.length) {
-          excuteQuery(`INSERT INTO users (email, name, profile_img) VALUE ('${email}', '${name}', '${profile_img}');`, (err: Error, result: null) => {
+          excuteQuery(`SELECT COUNT(email) as total FROM users;`, (err: Error, result: any) => {
             if (err) {
               reject(err)
             } else {
-              resolve("CREATE")
+              let queryInsert = `INSERT INTO users (email, name, profile_img) VALUE ('${email}', '${name}', '${profile_img}');`
+              if (+result[0].total < 20) {
+                queryInsert = `INSERT INTO users (email, name, profile_img, credit) VALUE ('${email}', '${name}', '${profile_img}', 3);`
+              }
+              excuteQuery(queryInsert, (err: Error, result: null) => {
+                if (err) {
+                  reject(err)
+                } else {
+                  resolve("CREATE")
+                }
+              });
             }
           });
         } else {
