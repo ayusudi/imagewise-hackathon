@@ -14,12 +14,12 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         footer: 'linear-gradient(180deg, #2F397C 0%, #141337 100%)',
-        gradientapp: 'url("https://imagewise-tidb-2023.vercel.app/gradient.png")',
+        gradientapp: 'url("https://imagewise-ayusudi.vercel.app/gradient.png")',
         grablue: 'linear-gradient(180deg, rgba(8, 23, 34, 0.01) 78.65%, rgba(47, 95, 130, 0.05) 86.98%, #1B79BE 100%)',
         grapink: 'linear-gradient(0deg, rgba(69, 69, 69, 0.01) 80.8%, rgba(179, 109, 165, 0.5) 92.98%, #B5419B 100%);',
         gracard: 'linear-gradient(45deg, #342782 0%, #1E4898 70.52%, #3B5CB2 100%)',
         gcardfeature: 'linear-gradient(44deg, #251873 0%, #254C99 100%)',
-        gradfeatureblue: 'url("https://imagewise-tidb-2023.vercel.app/bluegrad.png")',
+        gradfeatureblue: 'url("https://imagewise-ayusudi.vercel.app/bluegrad.png")',
         "bluee": "#1A2360",
         gnav: 'linear-gradient(180deg, #251873 0%, #152e6190 85%)'
       },
@@ -30,7 +30,7 @@ module.exports = {
         pro: ['var(--font-pro)']
       },
       stroke: {
-        gradientapp: 'url("https://imagewise-tidb-2023.vercel.app/gradient.png")'
+        gradientapp: 'url("https://imagewise-ayusudi.vercel.app/gradient.png")'
       },
       height: {
         "res": "calc(100vh - (96px))",

@@ -2,7 +2,7 @@
 
 # ImageWise
 
-[Click here to try ImageWise](https://imagewise.vercel.app/)
+[Click here to try ImageWise](https://imagewise-ayusudi.vercel.app)
 
 ImageWise is website that provide AI image feature from Third Party API.
 

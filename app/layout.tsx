@@ -19,7 +19,7 @@ export default function RootLayout({ children, session }: Props) {
   return (
     <html lang="en">
       <header>
-        <link rel="shortcut icon" href="https://imagewise-tidb-2023.vercel.app/logo.ico" sizes="any" />
+        <link rel="shortcut icon" href="https://imagewise-ayusudi.vercel.app/logo.ico" sizes="any" />
         <title>ImageWise</title>
         {/*  eslint-disable-next-line @next/next/no-sync-scripts */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FHFT7CLFCD"></script>
