@@ -35,10 +35,17 @@ const BannerLanding = () => {
         </div>
         <div>
           <p className="text-base font-bold my-3 lg:my-0" >Powered to finish this project for </p>
+          {/* eslint-disable jsx-a11y/alt-text */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="devpost.svg" className="object-cover h-auto w-2/6 h-12 relative lg:mb-4 mb-2 " alt="IMAGEWISE" />
+          {/* eslint-disable jsx-a11y/alt-text */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="hackathon2.png" className="object-cover h-auto w-3/6 h-12 relative lg:mb-4 mb-2 " alt="IMAGEWISE-2" />
 
           {/* eslint-disable jsx-a11y/alt-text */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="hackthon.png" className="object-cover h-auto w-5/6 h-12 relative lg:mb-0 mb-14 " alt="IMAGEWISE" />
+          <img src="hackthon.png" className="object-cover h-auto w-5/6 h-12 relative lg:mb-0 mb-14 " alt="IMAGEWISE-1" />
+
         </div>
       </div>
       <div className="flex-1 flex lg:justify-end justify-center ">

@@ -2,11 +2,11 @@
 
 # ImageWise
 
-[Click here to try ImageWise](https://imagewise-tidb-2023.vercel.app/)
+[Click here to try ImageWise](https://imagewise.vercel.app/)
 
 ImageWise is website that provide AI image feature from Third Party API.
 
-TiDB Hackthon 2023 by Ayu Sudi Dwijayanti (Solo)
+by Ayu Sudi Dwijayanti (Solo)
 
 ![hackthon](./docs/asset/hackthon.png)
 
